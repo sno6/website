@@ -17,8 +17,8 @@ export default function Layout({
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Ramblings and projects." />
-          <meta name="og:title" content="Ramblings and projects." />
+          <meta name="description" content="Projects & ramblings" />
+          <meta name="og:title" content="Projects & ramblings" />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <header className={styles.header}>
