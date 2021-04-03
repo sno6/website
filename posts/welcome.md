@@ -1,9 +1,9 @@
 ---
-title: "Welcome!"
+title: "New Blog?"
 date: "2021-04-03"
 ---
 
-**Hello** and welcome to my new website. 
+Hello! and welcome to my new blog, or something. 
 
 The aim of this thing is to be a place where I can post all of my latest projects and go into more detail than is allowed on Github.
 
