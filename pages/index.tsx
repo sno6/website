@@ -10,9 +10,9 @@ export default function Home({
   allPostsData,
 }: {
   allPostsData: {
+    id: string
     date: string
     title: string
-    id: string
   }[]
 }) {
   return (

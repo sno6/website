@@ -57,6 +57,12 @@
   font-weight: 500;
 }
 
+.blogText {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .listItemTitleText {
   font-size: 34px;
   text-decoration: none;
@@ -72,6 +78,12 @@
   display: inline;
   margin-left: 0.8rem;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 724px) {
+  .arrow {
+    display: none;
+  }
 }
 
 .arrowReverse {

@@ -21,11 +21,11 @@ export default function Post({
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <small className={utilStyles.lightText}>
           <Date dateString={postData.date} />
-        </div>
+        </small>
         <div
-          className={utilStyles.lightText}
+          className={utilStyles.blogText}
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
       </article>
