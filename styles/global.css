@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'TTNorms';
+  font-weight: 900;
+  src: url('/fonts/TTNorms-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  font-weight: 500;
+  src: url('/fonts/TTNorms-Light.otf') format('opentype');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: TTNorms;
+  font-weight: 900;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #292C34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

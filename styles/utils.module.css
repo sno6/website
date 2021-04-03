@@ -1,0 +1,109 @@
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.marginLeft10px {
+  margin-left: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5rem;
+}
+
+.listItem {
+  margin: 2.6rem 0 1.25rem;
+}
+
+.lightText {
+  color: #fff;
+  font-weight: 500;
+}
+
+.listItemTitleText {
+  font-size: 40px;
+  text-decoration: none;
+  color: #BCCCFF;
+}
+
+.listItemTitleText:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.arrow {
+  display: inline;
+  margin-left: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.arrowReverse {
+  display: inline;
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.myLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.myLinks > a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.myLinks > a:hover {
+  text-underline-offset: 0.4rem;
+  text-decoration: underline;
+}
+
+.myLinks > img {
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+}
+
+.postContent {
+  margin-top: 4rem;
+  color: #FFF;
+}
