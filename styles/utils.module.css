@@ -63,6 +63,11 @@
   font-size: 18px;
 }
 
+.blogText a {
+  color: #BCCCFF;
+  text-decoration: none;
+}
+
 .listItemTitleText {
   font-size: 34px;
   text-decoration: none;
