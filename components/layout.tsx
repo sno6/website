@@ -54,7 +54,7 @@ export default function Layout({
               LinkedIn
             </a>
             <img src="/images/ellipse.svg" width={4} height={4} />
-            <a href="/misc/cv-final-compressed.pdf">Résumé</a>
+            <a href="/misc/cv.pdf">Résumé</a>
           </div>
         </header>
         <main className={!home ? utilStyles.postContent : undefined}>
