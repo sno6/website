@@ -13,6 +13,7 @@ export default function Home({
     id: string
     date: string
     title: string
+    readingMins: number
   }[]
 }) {
   return (
@@ -22,7 +23,7 @@ export default function Home({
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, readingMins }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <div className={utilStyles.listItemTitleContainer}>
@@ -38,7 +39,11 @@ export default function Home({
                 </div>
               </Link>
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <div>
+                  <Date dateString={date} />
+                  <span> · </span>
+                  <span className={utilStyles.smallText}>{readingMins} min</span>
+                </div>
               </small>
             </li>
           ))}

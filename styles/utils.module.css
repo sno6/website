@@ -12,6 +12,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  color: #BCCCFF;
 }
 
 .headingLg {
@@ -55,6 +56,10 @@
 .lightText {
   color: #fff;
   font-weight: 500;
+}
+
+.smallText {
+  font-size: 16px;
 }
 
 .blogText {

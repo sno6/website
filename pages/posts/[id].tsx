@@ -11,6 +11,7 @@ export default function Post({
   postData: {
     title: string
     date: string
+    readingMins: number
     contentHtml: string
   }
 }) {
@@ -23,6 +24,8 @@ export default function Post({
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <small className={utilStyles.lightText}>
           <Date dateString={postData.date} />
+          <span> · </span>
+          <span className={utilStyles.smallText}>{postData.readingMins} min</span>
         </small>
         <div
           className={utilStyles.blogText}
