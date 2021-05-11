@@ -19,7 +19,7 @@ Your browser does not support the video tag.
 	<li>A PoE camera that has motion detection capabilities. I chose a model similar to <a href="https://www.hikvision.com/en/products/IP-Products/Network-Cameras/Ultra-Series-SmartIP-/ds-2cd3686g2-izs0/">this.</a></li>
 	<li>A spare remote for your gate.</li>
 	<li>Raspberry Pi or Arduino.</li>
-    <li>5v relay. I went with <a href="jaycar.co.nz/arduino-compatible-5v-relay-board/p/XC4419">this</a> fella because it was cheap and I could get it locally.</li>
+    <li>5v relay. I went with <a href="https://www.jaycar.co.nz/arduino-compatible-5v-relay-board/p/XC4419">this</a> fella because it was cheap and I could get it locally.</li>
     <li>An ethernet cable long enough to reach from the camera to a network switch.</li>
     <li>Conduit housing for the ethernet cable.</li>
     <li>3 x jumper wires.</li>
@@ -27,9 +27,9 @@ Your browser does not support the video tag.
 
 <b>Technical Details</b>
 
-<p>The first order of business was setting up the Pi. I decided to use the wonderful <a href=”https://www.balena.com”>Balena</a> to help with this. Balena allows me to easily push code to the pi remotely, monitor logs and health via the cloud, as well as eases the flashing/setup process which is typically a headache.</p>
+<p>The first order of business was setting up the Pi. I decided to use the wonderful <a href=”https://www.balena.com”>Balena</a> to help with this. Balena allows me to easily push code to the pi remotely, monitor logs and health via the cloud, and ease the flashing/setup process which is typically a headache.</p>
 
-<p>After I got the Pi set up, and validated that I could push code to it and execute that code, I decided to test the relay. In order to get the relay connected to the Pi, we need to attach jumper wires from the NC and Signal terminals of the relay into the corresponding GPIO pins of the Pi (which pins depend on the model of your Pi).</p>
+<p>After I got the Pi set up, and validated that I could push code to it and execute that code, I decided to test the relay. In order to get the relay connected to the Pi, we need to attach jumper wires from the NC and Signal terminals of the relay into the corresponding GPIO pins of the Pi.</p>
 
 <p>I then wrote some <a href="https://github.com/sno6/gate-god/blob/master/relay/relay.go">code</a> to turn on and off the relay to make sure I wired everything correctly.</p>
 
@@ -43,7 +43,7 @@ Your browser does not support the video tag.
 
 <p>Now we've got the bulk of the hardware setup out of the way it's time to work with our camera. Unfortunately, the model I purchased was getting a little long in the tooth, and as a consequence, only allowed me to send frames on motion over FTP. So I <a href="https://github.com/sno6/gate-god/blob/master/server/ftp/ftp.go">wrote</a> an FTP server to run on the Pi and process the frames as they come in. When a new frame hits the server, it sends it over to the amazing <a href="https://platerecognizer.com">PlateRecognizer</a> service to find any license plates that could be in the frame. If we find a plate that is in our whitelist (defined in a config file), we simply trigger the relay to open the gate. There's obviously a little more to it than that, such as finding the “best” frame out of a batch, so I urge you to take a look at the <a href="https://github.com/sno6/gate-god">code</a> if you're following along.</p>
 
-<p>We've now got a Pi that can receive frames from a camera, check for license plates, and open a gate if it sees someone it recognises. I decided to do a little house keeping and put the Pi in a case as you can see below.</p>
+<p>We've now got a Pi that can receive frames from a camera, check for license plates, and open a gate if it sees someone it recognises. I decided to do a little house keeping and put the Pi in a case, as you can see below.</p>
 
 <img src="/misc/house-keeping.jpeg" />
 
