@@ -1,7 +1,7 @@
 ---
-title: "Dibs - Vehicle Search Done Right"
+title: "Dibs"
 date: "2021-04-04"
-readingMins: 2
+readingMins: 1
 ---
 
 <p>Fed up with scouring the Internet night and day in search of a mint condition 80's Toyota Land Cruiser, I decided to build a website to do the searching for me.</p>
