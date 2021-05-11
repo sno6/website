@@ -19,7 +19,7 @@ export default function Home({
   return (
     <Layout home>
       <Head>
-        <title>Projects & ramblings</title>
+        <title>Projects and Ramblings</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <ul className={utilStyles.list}>
