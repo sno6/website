@@ -4,7 +4,7 @@ date: "2021-05-11"
 readingMins: 5
 ---
 
-<p>The following is an overview of how I built and installed a vehicle entry system at my dad’s house. Or how I was too lazy to walk 5 meters to open a gate.</p>
+<p>The following is an overview of how I built and installed an automatic vehicle entry system at my dad’s house using an IP camera and a Raspberry Pi. Or, said differently, how I was too lazy to get out of my car and walk 5 meters to open a gate.</p>
 
 <p>But before we get into the details, a demo!</p>
 
