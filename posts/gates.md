@@ -16,7 +16,7 @@ Your browser does not support the video tag.
 <h3>Equipment I used</h3>
 
 <ul>
-	<li>A PoE camera that has motion detection capabilities. I chose a model similar to <a href="https://www.nfs.nz/product/1353-hikvision-2mp-lightfighter-wdr-ir-vf-bullet-2-8-12mm">this.</a></li>
+	<li>A PoE camera that has motion detection capabilities. I chose <a href="https://www.nfs.nz/product/1353-hikvision-2mp-lightfighter-wdr-ir-vf-bullet-2-8-12mm">this</a> model.</li>
 	<li>A spare remote for your gate.</li>
 	<li>Raspberry Pi or Arduino.</li>
     <li>5v relay. I went with <a href="https://www.jaycar.co.nz/arduino-compatible-5v-relay-board/p/XC4419">this</a> fella because it was cheap and I could get it locally.</li>
@@ -29,7 +29,7 @@ Your browser does not support the video tag.
 
 <p>The first order of business was setting up the Pi. I decided to use <a href=”https://www.balena.com”>Balena</a> to help with this. Balena allows me to easily push code to the Pi remotely, monitor logs and health via the cloud, and ease the flashing/setup process which is typically a headache.</p>
 
-<p>After I got the Pi set up, and validated that I could push code to it and execute that code, I decided to test the relay. In order to get the relay connected to the Pi, I attached jumper wires from the VCC, GND and IN pins of the relay into the GPIO pins of the Pi (specified by the relay's documentation).</p>
+<p>After I got the Pi setup, and validated that I could push code to it and execute that code, I decided to test the relay. In order to get the relay connected to the Pi, I attached jumper wires from the VCC, GND and IN pins of the relay into the GPIO pins of the Pi (specified by the relay's documentation).</p>
 
 <p>I then wrote some <a href="https://github.com/sno6/gate-god/blob/master/relay/relay.go">code</a> to turn on and off the relay to make sure I wired everything correctly.</p>
 
@@ -59,7 +59,7 @@ Your browser does not support the video tag.
 
 <p>And yup.. that's a bucket covering a small exposed gap in the mount that covers the wiring.</p>
 
-<p>I'm planning on building a simple mobile app shortly that will be able to recieve push notifications of unknown vehicles at the gate, trigger the relay manually, and more.</p>
+<p>I'm planning on building a simple mobile app shortly that will be able to receive push notifications of unknown vehicles at the gate, trigger the relay manually, and more.</p>
 
 <p>I hope you enjoyed the post. If you're looking for a bit more detail or have any questions about how this system was built, reach out via email (it can be found in my CV on the home page). This was a super fun project to work on with and for my dad, and hopefully I will be able to post more projects like this one in the near future.</p>
 
