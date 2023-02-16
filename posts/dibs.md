@@ -6,13 +6,13 @@ readingMins: 1
 
 <p>Fed up with scouring the Internet night and day in search of a mint condition 80's Toyota Land Cruiser, I decided to build a website to do the searching for me.</p>
 
-<img src="/misc/cruiser.jpeg" alt="Cruiser" />
+<p>Dibs was a service I built that constantly scraped all of the latest listings from the largest vehicle marketplaces in New Zealand. It allowed users to create alerts that would email them as soon as a listing matching their search appeared.
 
-<p><a href="https://www.dibs.ai">Dibs</a> is a service that constantly scrapes all of the latest listings from the largest vehicle marketplaces in New Zealand. It also allows users to create alerts that will email them as soon as a listing matching their search appears.
+The benefit of a service like this was two-fold. Firstly, users searching for a new car didn’t need to browse all of the services individually to find good listings, as Dibs aggregated everything into a single service. The other benefit being for classic car enthusiasts, as sometimes being first matters (I’ve learnt this myself). Being notified within 15 minutes of a listing being posted means that the user will be the first to respond to the post, or view the car, which for some listings could be crucial.
 
-The benefit of a service like this is two-fold. Firstly, users searching for a new car don’t need to browse all of the services individually to find good listings, as Dibs aggregates everything into a single service. The other benefit being for classic car enthusiasts, as sometimes being first matters (I’ve learnt this myself). Being notified within 15 minutes of a listing being posted means that the user will be the first to respond to the post, or view the car, which for some listings could be crucial.
-
-As of the time of writing, Dibs is pulling in thousands of listings per day. With all of this data gives Dibs an overview of the market which traditional marketplaces don’t have. In the near future I plan to make use of this data to implement price range predictions and rarity evaluations.
-
-But don't just take my word for it, check it out at <a href="https://www.dibs.ai">https://www.dibs.ai</a>.
+The plan was to be a search engine for "goods", moving into property was the next step. Ultimately, I quickly ran through the money I had saved up after quiting my job to work on the project. I wouldn't change anything though, it was a great experience.
 </p>
+
+<p>Oh and I bought that truck that I was obsessed (I still am) about.</p>
+
+<img src="/misc/truck.jpg" alt="Cruiser" />
