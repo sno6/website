@@ -13,6 +13,8 @@ The benefit of a service like this was two-fold. Firstly, users searching for a 
 The plan was to be a search engine for "goods", moving into property was the next step. Ultimately, I quickly ran through the money I had saved up after quiting my job to work on the project. I wouldn't change anything though, it was a great experience.
 </p>
 
+<img src="/misc/dibs-preview.png" alt="Dibs" />
+
 <p>Oh and I bought that truck that I was obsessed about (I still am).</p>
 
 <img src="/misc/truck.jpg" alt="Cruiser" />
