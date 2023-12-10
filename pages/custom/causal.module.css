@@ -1,0 +1,15 @@
+.clientContainer {
+    display: flex;
+}
+
+.resetButton {
+    border: none;
+    color: #fff;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 2px solid #BCCCFF;
+    background: none;
+    padding: 0;
+    margin-top: 3px;
+}

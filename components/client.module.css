@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.textInput {
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #BCCCFF;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.textInput:focus {
+    outline: none;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 3px;
+}

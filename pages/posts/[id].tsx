@@ -4,6 +4,7 @@ import Head from "next/head"
 import Date from "../../components/date"
 import utilStyles from "../../styles/utils.module.css"
 import { GetStaticProps, GetStaticPaths } from "next"
+import Causal from "../custom/causal"
 
 export default function Post({
   postData,
@@ -15,6 +16,19 @@ export default function Post({
     contentHtml: string
   }
 }) {
+
+  const getPost = () => {
+    if (postData.title !== "Causal Trees") {
+      return <div
+        className={utilStyles.blogText}
+        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+      />
+    }
+
+    // Custom post component for causal trees to include WASM elements.
+    return <div className={utilStyles.blogText}><Causal /></div>
+  }
+
   return (
     <Layout>
       <Head>
@@ -27,10 +41,7 @@ export default function Post({
           <span> · </span>
           <span className={utilStyles.smallText}>{postData.readingMins} min</span>
         </small>
-        <div
-          className={utilStyles.blogText}
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-        />
+        {getPost()}
       </article>
     </Layout>
   )

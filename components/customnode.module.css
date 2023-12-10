@@ -1,0 +1,18 @@
+.node {
+    background-color: #222138;
+    color: #fff;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.533) 0px 0px 9px 0px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.nodeDropzone {
+    background-color: #ff0072;
+    box-shadow: 0 0 9px 0 #ff0072;
+}
+
+.handle {
+    pointer-events: none;
+    opacity: 0;
+}

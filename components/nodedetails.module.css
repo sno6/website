@@ -1,0 +1,17 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #222138;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.533) 0px 0px 9px 0px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.container > span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
