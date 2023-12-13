@@ -38,10 +38,13 @@ export class Tree {
         return s;
     }
 
-    AddSequence(parentID: ID | null, seq: string[]): ID {
+    AddSequence(parentID: ID | null, seq: string[], entityID?: number): ID {
         let currentParentID = parentID;
         for (const v of seq) {
-            currentParentID = this.AddCausalNode(currentParentID, v);
+            currentParentID = this.AddCausalNode(currentParentID, v, entityID);
+            if (entityID) {
+                currentParentID.EntityID = entityID;
+            }
         }
         return currentParentID!;
     }

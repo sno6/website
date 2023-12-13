@@ -36,7 +36,7 @@ function CustomNode({ data, sourcePosition, targetPosition }: NodeProps) {
     >
       <Handle className={styles.handle} type="target" position={targetPosition || Position.Top} />
       <Handle className={styles.handle} type="source" position={sourcePosition || Position.Bottom} />
-      {data.label}
+      <span style={{color: data.color ?? "#fff"}}>{data.label}</span>
     </div>
   );
 }

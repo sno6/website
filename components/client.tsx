@@ -4,6 +4,7 @@ import { Tree } from "./utils/causaltree";
 
 interface ClientProps {
     clientId: number; 
+    color?: string;
     tree: Tree
     onTreeUpdated: (tree: Tree) => void;
     onNodeRemoved: (id: string) => void;
@@ -42,7 +43,7 @@ export default function Client(props: ClientProps) {
 
     return (
         <div className={styles.container}>
-            <span className={styles.title}>{`Client ${props.clientId}`}</span>
+            <span className={styles.title} style={{color: props.color ?? "#fff"}}>{`Client ${props.clientId}`}</span>
             <input 
                 type="text"
                 placeholder={"|"}

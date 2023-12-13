@@ -80,7 +80,6 @@ const TreeView = (props: ExampleProps) => {
         onNodeMouseEnter={props.onNodeMouseEnter}
         onNodeMouseLeave={props.onNodeMouseLeave}
         fitView
-        // newly added edges get these options automatically
         defaultEdgeOptions={defaultEdgeOptions}
         minZoom={-Infinity}
         maxZoom={Infinity}
