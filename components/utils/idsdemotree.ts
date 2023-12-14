@@ -12,7 +12,18 @@ export const IDsDemoTree = (): Tree => {
 export const ThreeClientDemoTree = (): Tree => {
     const tree = new Tree(1);
     tree.AddSequence(tree.ID, ["I", " ", "❤"])
-    tree.AddSequence({EntityID: 1, Timestamp: 4}, [" ", "A", "p", "p", "l", "e", "s"], 2)
-    tree.AddSequence({EntityID: 1, Timestamp: 4}, [" ", "P", "e", "a", "r", "s"], 3)
+
+    const tree2 = new Tree(2);
+    tree2.Merge(tree);
+
+    const tree3 = new Tree(3);
+    tree3.Merge(tree);
+
+    tree2.AddSequence({Timestamp: 4, EntityID: 1}, [" ", "A", "p", "p", "l", "e", "s"]);
+    tree3.AddSequence({Timestamp: 4, EntityID: 1}, [" ", "P", "e", "a", "r", "s"]);
+
+    tree.Merge(tree2);
+    tree.Merge(tree3);
+
     return tree;
 }

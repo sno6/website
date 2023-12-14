@@ -207,7 +207,7 @@ export default function CausalScene({ scene }) {
                             onTreeUpdated={onTreeUpdated}
                         />
                     </div>
-                    <button className={styles.resetButton} onClick={resetTree}>RESET</button>
+                    <button className={styles.resetButton} onClick={resetTree}>Reset</button>
                 </>
             }
 
@@ -248,7 +248,7 @@ export default function CausalScene({ scene }) {
 
             {scene === Scenes.IDDemo &&
                 <>
-                    <button className={styles.resetButton} onClick={() => { setShouldReveal(true) }}>REVEAL</button>
+                    <button className={styles.resetButton} onClick={() => { setShouldReveal(true) }}>Reveal</button>
                     {shouldReveal && <span style={{ 'marginLeft': 10 }}>"Causal trees"</span>}
                 </>
             }
