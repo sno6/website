@@ -109,6 +109,7 @@ export default function Causal() {
                 <li><a href="https://josephg.com/blog/crdts-go-brrr/">CRDTs go brr (optimization exploration).</a></li>
                 <li><a href="https://web.archive.org/web/20190505005829/http://www.st.ewi.tudelft.nl/victor/articles/ctre.pdf">The original Causal Tree paper.</a></li>
                 <li><a href="http://archagon.net/blog/2018/03/24/data-laced-with-history/">Data laced with history (exploration of causal trees and optimizations).</a></li>
+                <li><a href="https://github.com/sno6/causal/blob/main/simpletree/simpletree.go">Educational Go implementation that I wrote.</a></li>
             </ul>
         </div>
     )
