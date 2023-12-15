@@ -111,6 +111,10 @@ export default function Causal() {
                 <li><a href="http://archagon.net/blog/2018/03/24/data-laced-with-history/">Data laced with history (exploration of causal trees and optimizations).</a></li>
                 <li><a href="https://github.com/sno6/causal/blob/main/simpletree/simpletree.go">Educational Go implementation that I wrote.</a></li>
             </ul>
+
+            <h2>Thanks</h2>
+
+            <p>Thanks to the folks at <a href="https://reactflow.dev/">React Flow</a> for letting me use a free Pro account to build the interactive demos.</p>
         </div>
     )
 }
