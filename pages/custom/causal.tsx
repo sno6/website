@@ -100,7 +100,7 @@ export default function Causal() {
 
             <h2>Conclusion</h2>
 
-            <p>And that’s a wrap! hopefully you’ve learnt something new about CRDTs! If you’re wondering about real-world implementations you will be happy to know that the ideas we talked about today are the core design ideas behind the leading opensource CRDT implementations such as <a href="https://github.com/automerge/automerge">Automerge</a> and <a href="https://github.com/yjs/yjs">Yjs</a>.</p>
+            <p>And that’s a wrap! hopefully you’ve learnt something new about CRDTs! If you’re wondering about real-world implementations you will be happy to know that the ideas we talked about today are integral to the design of such popular general purpose CRDT libraries as <a href="https://github.com/automerge/automerge">Automerge</a> and <a href="https://github.com/yjs/yjs">Yjs</a>.</p>
             <p>If you’re curious about tree size implications, optimizations, and things like node garbage collection, then please check the further reading list below, there’s some gems in there I think you will enjoy.</p>
 
             <h2>Further reading</h2>
