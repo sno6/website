@@ -2,13 +2,20 @@
     display: flex;
 }
 
+@media (max-width: 767px) {
+    .clientContainer {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
 .resetButton {
     border: none;
     color: #fff;
     cursor: pointer;
     /* font-weight: 600; */
     font-size: 16px;
-    border-bottom: 2px solid #BCCCFF;
+    border-bottom: 2px solid #bcccff;
     background: none;
     padding: 0;
     margin-top: 10px;
