@@ -10,11 +10,11 @@ readingMins: 1
 
 The benefit of a service like this was two-fold. Firstly, users searching for a new car didn’t need to browse all of the services individually to find good listings, as Dibs aggregated everything into a single service. The other benefit being for classic car enthusiasts, as sometimes being first matters (I’ve learnt this myself). Being notified within 15 minutes of a listing being posted means that the user will be the first to respond to the post, or view the car, which for some listings could be crucial.
 
-The plan was to be a search engine for "goods", moving into property was the next step. Ultimately, I quickly ran through the money I had saved up after quiting my job to work on the project. I wouldn't change anything though, it was a great experience.
+The plan was for Dibs to eventually transform into a general product search engine, expanding into property was the natural next step. Unfortunately, reality hit and I quickly ran through my savings forcing me to get back into the job market. With that said, I wouldn't change a thing - it was an incredible experience and through the failure I learnt a lot.
 </p>
 
 <img src="/misc/dibs-preview.png" alt="Dibs" />
 
-<p>Oh and I bought that truck that I was obsessed about (I still am).</p>
+<p>Oh and I found that truck that I was looking for.</p>
 
 <img src="/misc/truck.jpg" alt="Cruiser" />
