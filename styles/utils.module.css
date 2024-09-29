@@ -146,6 +146,7 @@
 }
 
 .bannerIcon {
+    pointer-events: none;
     position: relative;
     left: -29px;
     top: -23px;
