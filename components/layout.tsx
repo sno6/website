@@ -1,16 +1,16 @@
-import Head from "next/head"
-import Image from "next/image"
-import styles from "./layout.module.css"
-import utilStyles from "../styles/utils.module.css"
-import Link from "next/link"
-import FadeIn from "react-fade-in"
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import FadeIn from "react-fade-in";
 
 export default function Layout({
   children,
   home,
 }: {
-  children: React.ReactNode
-  home?: boolean
+  children: React.ReactNode;
+  home?: boolean;
 }) {
   return (
     <FadeIn>
@@ -77,5 +77,5 @@ export default function Layout({
         )}
       </div>
     </FadeIn>
-  )
+  );
 }

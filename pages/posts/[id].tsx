@@ -5,6 +5,7 @@ import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Causal from "../custom/causal";
+import { useBanner } from "../../hooks/useBanner";
 
 export default function Post({
   postData,
@@ -16,6 +17,8 @@ export default function Post({
     contentHtml: string;
   };
 }) {
+  useBanner();
+
   const getPost = () => {
     if (postData.title === "Causal Trees") {
       return (

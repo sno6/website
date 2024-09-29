@@ -1,21 +1,24 @@
-import Head from "next/head"
-import Layout from "../components/layout"
-import utilStyles from "../styles/utils.module.css"
-import { getSortedPostsData } from "../lib/posts"
-import Link from "next/link"
-import Date from "../components/date"
-import { GetStaticProps } from "next"
+import Head from "next/head";
+import Layout from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "../components/date";
+import { GetStaticProps } from "next";
+import { useBanner } from "../hooks/useBanner";
 
 export default function Home({
   allPostsData,
 }: {
   allPostsData: {
-    id: string
-    date: string
-    title: string
-    readingMins: number
-  }[]
+    id: string;
+    date: string;
+    title: string;
+    readingMins: number;
+  }[];
 }) {
+  useBanner();
+
   return (
     <Layout home>
       <Head>
@@ -42,7 +45,9 @@ export default function Home({
                 <div>
                   <Date dateString={date} />
                   <span> · </span>
-                  <span className={utilStyles.smallText}>{readingMins} min</span>
+                  <span className={utilStyles.smallText}>
+                    {readingMins} min
+                  </span>
                 </div>
               </small>
             </li>
@@ -50,14 +55,14 @@ export default function Home({
         </ul>
       </section>
     </Layout>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
     },
-  }
-}
+  };
+};
