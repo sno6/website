@@ -141,7 +141,7 @@
     background-size: cover;
     background-image: url("/images/corner.svg");
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
 }
 
